@@ -1,0 +1,205 @@
+body {
+    background-color: #283138;
+    font-family: "Courier New", Arial, sans-serif;
+    font-size: 1.27vw;
+    line-height: 1.37vw;
+}
+
+main {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+header {
+    width: 100%;
+    height: 14%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-bottom: 1px solid #283138;
+}
+
+header div {
+    width: 10%;
+    height: 88%;
+    position: absolute;
+    top: 6%;
+    left: 1%;
+}
+
+header input[type="text"] {
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 28%;
+    left: 13%;
+    border: 1px outset #2dfdff;
+    border-radius: 15px;
+    font-family: "Courier New", Arial, sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 1.5%;
+}
+
+header input[type="button"] {
+    width: 11.2%;
+    height: 40%;
+    position: absolute;
+    top: 28.5%;
+    right: 1%;
+    border: 1px outset #2b3740;
+    border-radius: 15px;
+    font-family: "Courier New", Arial, sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 0.5% 1%;
+}
+
+header select {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 28.5%;
+    right: 14%;
+    border: 1px outset #2dfdff;
+    border-radius: 15px;
+    font-family: "Courier New", Arial, sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 1.5%;
+}
+
+header select option {
+    background-color: #4cbfbf;
+    color: #2b3740;
+}
+
+header select option[selected="selected"] {
+    background-color: #2b3740;
+    color: #2dfdff;
+}
+
+*:focus {
+    outline: none;
+}
+
+.controllers {
+    width: 100%;
+    height: 7%;
+    position: relative;
+    top: 14%;
+}
+
+.controllers ul {
+    list-style: none;
+}
+
+.controllers ul li {
+    float: left;
+    margin: 3%;
+}
+
+.volume-controllers ul li {
+    margin: 6%;
+}
+
+.seekbar {
+    border-radius: 15px;
+}
+
+.outer.seekbar {
+    width: 35%;
+    height: 25%;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    border: 1px outset #283138;
+    overflow: hidden;
+}
+
+.inner.seekbar {
+    width: 0%;
+    height: 100%;
+    background-color: #4cbfbf;
+}
+
+.title {
+    width: 70%;
+    text-align: center;
+}
+
+.play-controllers {
+    width: 45%;
+    position: absolute;
+    left: 45%;
+}
+
+.volume-controllers {
+    width: 15%;
+    position: absolute;
+    top: 3.5%;
+    right: 1%;
+}
+
+.playlist {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 28%;
+}
+
+.playlist ul {
+    background-color: #283138;
+    color: #2dfdff;
+}
+
+.playlist li {
+    height: 10%;
+    padding: 1% 2%;
+    font-size: 0.9em;
+    padding-left: 0.5%;
+    border-bottom: 0.3px solid #2dfdff;
+    cursor: pointer;
+}
+
+.now-playing {
+    width: 100%;
+    height: 7%;
+    position: absolute;
+    top: 21%;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-bottom: 0.3px solid #2dfdff;
+    cursor: pointer;
+}
+
+.now-playing p {
+    width: 70%;
+    margin: 1.8% auto;
+    text-transform: capitalize;
+}
+
+.playlist li:hover, .playlist li.selected {
+    color: #4cbfbf;
+    background: #2b3740;
+    background-image: -webkit-gradient(linear, left center, right center, color-stop(0%, #7ef1fc), color-stop(100%, #237ef5));
+    background-image: -webkit-linear-gradient(left, #2b3740, #2dfdff);
+    background-image: -moz-linear-gradient(left, #2b3740, #2dfdff);
+    background-image: -ms-linear-gradient(left, #2b3740, #2dfdff);
+    background-image: -o-linear-gradient(left, #2b3740, #2dfdff);
+    background-image: linear-gradient(to right, #2b3740 0%, #2dfdff 100%);
+}
+
+.playlist .duration {
+    position: absolute;
+    right: 1%;
+}
+
+.play-now {
+    position: absolute;
+    right: 13%;
+    color: #2b3740;
+}

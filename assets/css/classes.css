@@ -1,0 +1,44 @@
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.dark {
+    background-color: #2b3740;
+    color: #4cbfbf;
+}
+
+.dark:hover, .dark.selected {
+    color: #2dfdff;
+}
+
+.song-controllers .dark:hover {
+    background-color: #2dfdff;
+}
+
+.light {
+    background-color: #4cbfbf;
+    color: #2b3740;
+}
+
+.external{
+    border: 1px solid #2dfdff;
+}
+
+.left {
+    position: absolute;
+    left: 1%;
+}
+
+.right {
+    position: absolute;
+    right: 1%;
+}
+
+.center {
+    position: absolute;
+    left: 15%;
+}

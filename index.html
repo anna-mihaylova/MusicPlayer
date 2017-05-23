@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="assets/css/classes.css"/>
+        <link rel="stylesheet" href="assets/css/styles.css"/>
+    </head>
+    <body>
+        <main>
+            <header class="dark external">
+                <div>
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <input id="search" type="text" name="" placeholder="search..." class="dark">
+                        </li>
+                        <li>
+                            <select class="dark">
+                               <option value="track" selected="selected">Track</option>
+                               <option value="artist">Artist</option>
+                               <option value="album">Album</option>
+                               <option value="playlist">Playlist</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="button" name="button" value="search" class="light">
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="player" class="controllers dark external hidden">
+                <div id="controllers">
+                    <div id="outerSeekbar"class="song-controllers outer seekbar">
+                        <div id="seekbar" class="dark inner seekbar"></div>
+                    </div>
+                    <nav class="play-controllers">
+                        <ul>
+                            <li><span class="fast-backward dark"><i class="fa fa-fast-backward" aria-hidden="true"></i></span></li>
+                            <li><span class="backward dark"><i class="fa fa-backward" aria-hidden="true"></i></span></li>
+                            <li><span class="play dark"><i class="fa fa-play" aria-hidden="true"></i></span></li>
+                            <li><span class="pause dark"><i class="fa fa-pause" aria-hidden="true"></i></span></li>
+                            <li><span class="stop dark"><i class="fa fa-stop" aria-hidden="true"></i></span></li>
+                            <li><span class="forward dark"><i class="fa fa-step-forward" aria-hidden="true"></i></span></li>
+                            <li><span class="fast-forward dark"><i class="fa fa-fast-forward" aria-hidden="true"></i></span></li>
+                        </ul>
+                    </nav>
+                    <nav class="volume-controllers">
+                        <ul>
+                            <li><span class="volume-up dark"><i class="fa fa-volume-up" aria-hidden="true"></i></span></li>
+                            <li><span class="volume-down dark"><i class="fa fa-volume-down" aria-hidden="true"></i></span></li>
+                            <li><span class="volume-off dark"><i class="fa fa-volume-off" aria-hidden="true"></i></span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="audio">
+                    <audio controls class="hidden">
+                        <source type="audio/mpeg">
+                        <source type="audio/ogg">
+                            Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+            <section id="nowPlaying" class="now-playing light external hidden">
+                <p id="song">
+                    <span id="songDuration" class="left"></span>
+                    <span id="songTitle" class="center title"></span>
+                    <span id="songTimePassed" class="right"></span>
+                </p>
+            </section>
+            <section id="playlist" class="playlist dark external hidden"></section>
+        </main>
+    </body>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/main.js"></script>
+</html>
